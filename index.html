@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>  
+<body>
+    <h1 class="title">Budget Tracker</h1>
+    <p class="subtitle">Imran Abdoulahi</p>
+
+    <section class="summary-box">
+        <h2>Balance: <span id="balance">0</span></h2>
+        <div class="totals">
+            <div>Total Income: <span class="green" id="income-total">0</span></div>
+            <div>Total Expenses: <span class="red" id="expense-total">0</span></div>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="table-box">
+            <h3>Expenses</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Entry Type</th>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Type</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table"></tbody>
+            </table>
+        </div>
+
+        <div class="form-box">
+            <h3>Add new</h3>
+            <label> Entry type:
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+            </label>
+            <label>Name:
+            <input type="text" id="desc" placeholder="name" />
+            </label>
+            <label>Amount:
+                <input type="number" id="amount" placeholder="0" />
+            </label>
+            <button id="add-btn">Add</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
