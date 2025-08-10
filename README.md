@@ -9,7 +9,7 @@ A simple budget tracker built using JavaScript and SASS
 - Object-Oriented coding with encapsulation
 - Styled using SASS using variables and mixins
 
-## How to Use
+## How to Use Tracker
 - Choose between Income (+) and Expense(-)
 - Add a Name/description
 - Click "Add"

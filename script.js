@@ -61,3 +61,4 @@ function updateUI() {
     expenseEl.textContent = expense;
 
 }
+
